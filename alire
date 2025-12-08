@@ -1,0 +1,14 @@
+#/usr/bin/env bash
+_alire_completions()
+{
+  COMPREPLY=($(compgen -W "\
+	help cache settings config instsall toolchain version \
+	get index search show \
+	build clean edit exec init pin printenv run update with \
+	action dev test \
+	publish \
+	" "${COMP_WORDS[1]}"))
+}
+
+complete -F _alire_completions alr
+
