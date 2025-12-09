@@ -2,7 +2,7 @@
 _alire_completions()
 {
   COMPREPLY=($(compgen -W "\
-	help cache settings config instsall toolchain version \
+	help cache settings config install toolchain version \
 	get index search show \
 	build clean edit exec init pin printenv run update with \
 	action dev test \
